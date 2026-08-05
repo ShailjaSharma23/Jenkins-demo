@@ -1,0 +1,11 @@
+{
+  "name": "jenkins-demo",
+  "version": "1.0.0",
+  "description": "Simple Jenkins Demo",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0"
+  }
+}
