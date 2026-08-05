@@ -1,0 +1,35 @@
+[
+  {
+    "fullName": "Aarav Sharma",
+    "rollNumber": "CS101",
+    "email": "aarav.sharma@example.com",
+    "phone": "9876543210",
+    "course": "BSc Computer Science",
+    "gender": "Male",
+    "dob": "2004-08-12",
+    "year": "Second Year",
+    "address": "12 Lake View Road, Pune"
+  },
+  {
+    "fullName": "Meera Patel",
+    "rollNumber": "BA208",
+    "email": "meera.patel@example.com",
+    "phone": "9123456780",
+    "course": "BA",
+    "gender": "Female",
+    "dob": "2003-11-03",
+    "year": "Final Year",
+    "address": "44 Green Park, Ahmedabad"
+  },
+  {
+    "fullName": "Rohan Das",
+    "rollNumber": "BCA315",
+    "email": "rohan.das@example.com",
+    "phone": "9988776655",
+    "course": "BCA",
+    "gender": "Other",
+    "dob": "2005-02-19",
+    "year": "First Year",
+    "address": "91 River Street, Kolkata"
+  }
+]
