@@ -3,91 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Registration Form</title>
+    <title>Student Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<main class="container">
-    <section class="hero">
-        <p class="eyebrow">Student Portal</p>
-        <h1>Student Registration Form</h1>
-        <p class="intro">Capture basic student details and keep a clean record for classroom or lab use.</p>
-    </section>
 
-    <form id="student-form" class="student-form">
-        <div class="field-grid">
-            <label>
-                Full Name
-                <input type="text" name="fullName" placeholder="Enter full name" required>
-            </label>
+    <div class="container">
 
-            <label>
-                Roll Number
-                <input type="text" name="rollNumber" placeholder="Enter roll number" required>
-            </label>
+        <h1>Student Registration</h1>
 
-            <label>
-                Email Address
-                <input type="email" name="email" placeholder="Enter email address" required>
-            </label>
+        <form id="studentForm">
 
-            <label>
-                Phone Number
-                <input type="tel" name="phone" placeholder="Enter phone number" required>
-            </label>
+            <label>Full Name</label>
+            <input type="text" id="name" required>
 
-            <label>
-                Course
-                <select name="course" required>
-                    <option value="">Select course</option>
-                    <option value="BCA">BCA</option>
-                    <option value="BSc Computer Science">BSc Computer Science</option>
-                    <option value="BCom">BCom</option>
-                    <option value="BA">BA</option>
-                </select>
-            </label>
+            <label>Email</label>
+            <input type="email" id="email" required>
 
-            <label>
-                Gender
-                <select name="gender" required>
-                    <option value="">Select gender</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
-            </label>
+            <label>Phone Number</label>
+            <input type="tel" id="phone" required>
 
-            <label>
-                Date of Birth
-                <input type="date" name="dob" required>
-            </label>
+            <label>Date of Birth</label>
+            <input type="date" id="dob" required>
 
-            <label>
-                Year of Study
-                <select name="year" required>
-                    <option value="">Select year</option>
-                    <option value="First Year">First Year</option>
-                    <option value="Second Year">Second Year</option>
-                    <option value="Third Year">Third Year</option>
-                    <option value="Final Year">Final Year</option>
-                </select>
-            </label>
-        </div>
+            <label>Course</label>
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="BCA">BCA</option>
+                <option value="B.Sc">B.Sc</option>
+                <option value="MCA">MCA</option>
+            </select>
 
-        <label class="full-width">
-            Address
-            <textarea name="address" rows="4" placeholder="Enter full address" required></textarea>
-        </label>
+            <label>Address</label>
+            <textarea id="address" required></textarea>
 
-        <div class="actions">
-            <button type="submit">Submit Student Data</button>
-            <button type="reset" class="secondary">Clear Form</button>
-        </div>
-    </form>
+            <button type="submit">Register</button>
 
-    <p id="status" class="status" aria-live="polite"></p>
-</main>
+        </form>
 
-<script src="script.js"></script>
+        <p id="message"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
