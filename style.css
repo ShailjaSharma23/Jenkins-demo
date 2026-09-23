@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin: 0;
 }
 
 .container {
@@ -59,4 +60,26 @@ button:hover {
     text-align: center;
     font-weight: bold;
     margin-top: 15px;
+}
+
+.tab-list {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.tab-button {
+    margin-top: 0;
+    padding: 10px;
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+.tab-button.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+[hidden] {
+    display: none;
 }

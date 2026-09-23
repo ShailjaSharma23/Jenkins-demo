@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Simple Jenkins Demo",
   "scripts": {
+    "start": "node server.js",
     "test": "jest --runInBand test.js"
   },
   "devDependencies": {
