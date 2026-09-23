@@ -105,13 +105,23 @@ const server = http.createServer((req, res) => {
                 const isValid = student && student.email === credentials.email &&
                     student.passwordHash === hashPassword(credentials.password || "");
 
+                const studentData = isValid ? {
+                    name: student.name,
+                    email: student.email,
+                    phone: student.phone,
+                    dob: student.dob,
+                    course: student.course,
+                    address: student.address
+                } : null;
+
                 res.writeHead(isValid ? 200 : 401, {
                     "Content-Type": "application/json",
                     ...corsHeaders
                 });
                 res.end(JSON.stringify({
                     success: isValid,
-                    message: isValid ? "Login successful!" : "Invalid email or password."
+                    message: isValid ? "Login successful!" : "Invalid email or password.",
+                    student: studentData
                 }));
             } catch (error) {
                 res.writeHead(400, {

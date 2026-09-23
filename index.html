@@ -11,7 +11,13 @@
 
     <div class="container">
 
-        <div class="tab-list" role="tablist" aria-label="Account actions">
+        <div id="alertBox" class="alert-box" hidden>
+            <span id="alertIcon" class="alert-icon">✓</span>
+            <span id="alertMessage" class="alert-message"></span>
+            <button type="button" class="alert-close" id="alertCloseBtn" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="tab-list" id="tabList" role="tablist" aria-label="Account actions">
             <button type="button" class="tab-button active" id="registerTab" role="tab" aria-selected="true">Register</button>
             <button type="button" class="tab-button" id="loginTab" role="tab" aria-selected="false">Login</button>
         </div>
@@ -68,6 +74,43 @@
 
                 <button type="submit">Login</button>
             </form>
+        </section>
+
+        <section id="dashboardPanel" hidden>
+            <div class="dashboard-header">
+                <div class="avatar-circle" id="profileAvatar">S</div>
+                <h1 id="welcomeUser">Welcome!</h1>
+                <p class="dashboard-subtitle">Logged in successfully</p>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-row">
+                    <span class="profile-label">Full Name</span>
+                    <span class="profile-value" id="dashName">-</span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Email</span>
+                    <span class="profile-value" id="dashEmail">-</span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Phone</span>
+                    <span class="profile-value" id="dashPhone">-</span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Course</span>
+                    <span class="profile-value" id="dashCourse">-</span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Date of Birth</span>
+                    <span class="profile-value" id="dashDob">-</span>
+                </div>
+                <div class="profile-row">
+                    <span class="profile-label">Address</span>
+                    <span class="profile-value" id="dashAddress">-</span>
+                </div>
+            </div>
+
+            <button type="button" id="logoutBtn" class="logout-btn">Log out</button>
         </section>
 
         <p id="message"></p>
